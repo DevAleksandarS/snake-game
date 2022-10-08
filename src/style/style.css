@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  color: #fff;
+}
+
+.game-container {
+  width: 100vw;
+  height: 100vh;
+
+  background: radial-gradient(#006b38ff, #101820ff);
+
+  position: relative;
+}
+
+.center {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  translate: -50% -50%;
+}
+
+.board-container {
+  translate: 25%;
+}
+
+.score-container {
+  width: 500px;
+
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 25px;
+  height: 25px;
+
+  margin: 0.5px;
+}
+
+.empty-cell {
+  background-color: #5cff5c;
+}
+
+.food-cell {
+  background: radial-gradient(#101820ff 30%, #5cff5c 0%);
+}
+
+.snake-cell {
+  background-color: #000;
+}
+
+.text {
+  font-size: 15px;
+  text-align: center;
+
+  margin-top: 20px;
+}
