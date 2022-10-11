@@ -5,8 +5,13 @@ import "./style/style.css";
 
 function App() {
   const [keyPress, setKeyPress] = useState("");
+  const [score, setScore] = useState(0);
 
   const keyRef = useRef();
+
+  const scoreValue = (value) => {
+    setScore(value);
+  };
 
   useEffect(() => {
     keyRef.current.focus();
@@ -21,8 +26,8 @@ function App() {
       className="game-container"
     >
       <div className="center">
-        <Board keyPress={keyPress} />
-        <Score />
+        <Board keyPress={keyPress} scoreValue={scoreValue} />
+        <Score score={score} />
         <p className="text">Press enter to start or reset</p>
       </div>
     </div>

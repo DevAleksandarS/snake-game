@@ -35,7 +35,12 @@ html {
 }
 
 .board-container {
-  translate: 25%;
+  width: 260px;
+  height: 260px;
+
+  translate: 50%;
+
+  overflow: initial;
 }
 
 .score-container {
@@ -49,6 +54,8 @@ html {
 
 .row {
   display: flex;
+
+  left: 0;
 }
 
 .cell {
